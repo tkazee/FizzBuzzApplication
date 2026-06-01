@@ -1,0 +1,32 @@
+## [Visual Studio]
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## [Build Outputs]
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## [NuGet]
+packages/
+*.nuget.props
+*.nuget.targets
+
+## [Test Results]
+TestResults/
+*.trx
+*.coverage
+
+## [Operating System]
+.DS_Store
+Thumbs.db
+
+## [Environment Settings]
+.env
+appsettings.Development.json
