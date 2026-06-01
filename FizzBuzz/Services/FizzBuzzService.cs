@@ -27,11 +27,11 @@ namespace FizzBuzz.Services
                 if (isDiv3 && isDiv5) result.Output = "FizzBuzz";
                 else if (isDiv3) result.Output = "Fizz";
                 else if (isDiv5) result.Output = "Buzz";
-                else result.Output = value.ToString();                
+                else result.Output = $"Checked: {value} By 3, {value} By 5";
             }
             else
             {
-                result.Output = "Invalid Input";                
+                result.Output = "Invalid Input";
             }
             return result;
         }
