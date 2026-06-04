@@ -10,7 +10,7 @@ namespace FizzBuzzTest
         [InlineData("3", "Fizz")]
         [InlineData("5", "Buzz")]
         [InlineData("15", "FizzBuzz")]
-        [InlineData("7", "7")]
+        [InlineData("7", "Checked: 7 By 3, 7 By 5")]
         [InlineData("A", "Invalid Input")]
         public void Process_ShouldReturnCorrectOutput(string input, string expected)
         {
@@ -54,7 +54,7 @@ namespace FizzBuzzTest
             var results = _service.Process(inputs).ToList();
 
             Assert.Equal(5, results.Count);
-            Assert.Equal("1", results[0].Output);
+            Assert.Equal("Checked: 1 By 3, 1 By 5", results[0].Output);
             Assert.Equal("Fizz", results[1].Output);
             Assert.Equal("Buzz", results[2].Output);
             Assert.Equal("FizzBuzz", results[3].Output);
